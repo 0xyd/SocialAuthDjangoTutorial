@@ -2,6 +2,9 @@
 __pycache__/
 *.py[cod]
 
+# Ignore personal settings
+social_auth/my_settings.py
+
 # C extensions
 *.so
 
