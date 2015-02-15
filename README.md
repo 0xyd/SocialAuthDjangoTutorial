@@ -46,7 +46,7 @@ After the setting, do the migration to create tables the social auth need.
 
 Then go to check our database, we can see that there are 4 tables established with prefix "soical_auth".
 ![alt text][database_picture]
-[database_picture]: '/'
+[database_picture]: 'https://github.com/davisfreeman1015/SocialAuthDjangoTutorial/blob/master/Imgs/NewDatabaseTables.png'
 ##### B. 
    
   
