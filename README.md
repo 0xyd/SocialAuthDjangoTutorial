@@ -71,3 +71,6 @@ In this tutorial, we will focus on making a Web app with Facebook, Google and Tw
     'django.contrib.auth.backends.ModelBackend',
     )
 
+###### Warning: In the tutorial, we use django's authentication system. If you have make a better authentication system on your own. Hope you can share :)
+
+##### C. Add desired authentication backends to Django's AUTHENTICATION_BACKENDS setting:
