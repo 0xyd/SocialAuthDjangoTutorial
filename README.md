@@ -44,8 +44,30 @@ After the setting, do the migration to create tables the social auth need.
     
     $ python manage.py migrate
 
-Then go to check our database, we can see that there are 4 tables established with prefix "soical_auth".
+Then go to check our database( I like postgreSQL :) ), we can see that there are 4 tables established with prefix "soical_auth".
+
 ![database_picture](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/NewDatabaseTables.png)
-##### B. 
+##### B. Add desired authentication backends to Django's AUTHENTICATION_BACKENDS setting:
+
+Social Auth provides many social networks' authentications. Facebook, Twitter, Google, Yahoo, Spotify and Instagram are all supported. We can check whether the social authentications are supported by Social Auth in [here](http://psa.matiasaguirre.net/docs/intro.html#features)  
    
-  
+In this tutorial, we will focus on making a Web app with Facebook, Google and Twitter authentications.
+
+    
+    # Authentication backends Setting
+    AUTHENTICATION_BACKENDS = (
+    # For Facebook Authentication
+    'social.backends.facebook.FacebookOAuth2',
+    
+    # For Twitter Authentication
+    'social.backends.twitter.TwitterOAuth',
+    
+    # For Google Authentication
+    'social.backends.google.GoogleOpenId',
+    'social.backends.google.GoogleOAuth2',
+    'social.backends.google.GoogleOAuth',
+    
+    # Default Django Auth Backends
+    'django.contrib.auth.backends.ModelBackend',
+    )
+

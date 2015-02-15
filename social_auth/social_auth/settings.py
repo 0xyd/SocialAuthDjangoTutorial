@@ -54,6 +54,20 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
+# Authentication backends Setting
+AUTHENTICATION_BACKENDS = (
+    # For Facebook Authentication
+    'social.backends.facebook.FacebookOAuth2',
+    # For Twitter Authentication
+    'social.backends.twitter.TwitterOAuth',
+    # For Google Authentication
+    'social.backends.google.GoogleOpenId',
+    'social.backends.google.GoogleOAuth2',
+    'social.backends.google.GoogleOAuth',
+    # Default Django Auth Backends
+    'django.contrib.auth.backends.ModelBackend',
+)
+
 ROOT_URLCONF = 'social_auth.urls'
 
 WSGI_APPLICATION = 'social_auth.wsgi.application'
