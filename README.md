@@ -74,6 +74,8 @@ In this tutorial, we will focus on making a Web app with Facebook, Google and Tw
 ###### Warning: In the tutorial, we use django's authentication system. If you have make a better authentication system on your own. Hope you can share us how to implement customized authentication system with Social Auth :)
 
 ##### C. Set the Url entries
+
+Don't forget to set the url entreis for the social auth and the django administration
    
     urlpatterns = patterns('',
     ...
@@ -87,5 +89,33 @@ In this tutorial, we will focus on making a Web app with Facebook, Google and Tw
     ...
     )
     
+##### D. Add social auth's Template Context Processors
 
+Two template context processors should be added.
+    
+    
+	TEMPLATE_CONTEXT_PROCESSORS = (
+		# Default Template context processors
+    	'django.contrib.auth.context_processors.auth',
+    	'django.core.context_processors.debug',
+    	'django.core.context_processors.i18n',
+    	'django.core.context_processors.media',
+    	'django.core.context_processors.static',
+    	'django.core.context_processors.tz',
+    	'django.contrib.messages.context_processors.messages',
+
+    	# Setting of Template Context Processors for Social Auth
+    	'social.apps.django_app.context_processors.backends',
+    	'social.apps.django_app.context_processors.login_redirect', 
+    )
+
+Congratulations, we finish the basic social auth configuration. Let's start to build our first facebook login app.
+
+### 3. Create a Facebook app.
+
+##### A. Enroll an facebook app on Facebook Developer Center
+
+Everyone who has the facebook account is a facebook developer. If you don't have a facebook account, spend three minutes to apply one.
+
+Let's go to [facebook developer center](https://developers.facebook.com/)
 
