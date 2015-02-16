@@ -73,4 +73,19 @@ In this tutorial, we will focus on making a Web app with Facebook, Google and Tw
 
 ###### Warning: In the tutorial, we use django's authentication system. If you have make a better authentication system on your own. Hope you can share us how to implement customized authentication system with Social Auth :)
 
-##### C. Add desired authentication backends to Django's AUTHENTICATION_BACKENDS setting:
+##### C. Set the Url entries
+   
+    urlpatterns = patterns('',
+    ...
+
+    # Url Entries for social auth
+    url('', include('social.apps.django_app.urls', namespace='social')),
+
+    # Url Entries for django administration
+    url('', include('django.contrib.auth.urls', namespace='auth')),
+
+    ...
+    )
+    
+
+
