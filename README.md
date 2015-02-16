@@ -120,6 +120,7 @@ Everyone who has the facebook account is a facebook developer. If you don't have
 Let's go to [facebook developer center](https://developers.facebook.com/).
 
 Click "Add a New App" in "My Apps"
+
 ![AddNewApp](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/CreateANewFacebookApp.png)
 
 We are developing a Web app so choose the "www" icon.
@@ -127,4 +128,9 @@ We are developing a Web app so choose the "www" icon.
 ![Choose WWW](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/ChooseFacebookAppTypes.png)
 
 Then name our app and click the button "Create New Facebook App ID"
+
 ![NameFacebookAppID](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/NameFacebookAppID.png)
+
+A form pops out and finish the required blanks and click "Create App ID".
+
+![FinishForm](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/CreateAppIDForm.png)
