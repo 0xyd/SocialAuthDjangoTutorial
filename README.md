@@ -131,6 +131,9 @@ Then name our app and click the button "Create New Facebook App ID"
 
 ![NameFacebookAppID](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/NameFacebookAppID.png)
 
-A form pops out and finish the required blanks and click "Create App ID".
+A form pops out, finish the required blanks and click "Create App ID".
 
 ![FinishForm](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/CreateAppIDForm.png)
+
+After the App is created successfully, the page will redirect to a "Quick Start" tutorial.
+![QuickStartPage](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/QuickStartPage.png)
