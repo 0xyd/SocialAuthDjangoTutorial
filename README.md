@@ -117,5 +117,14 @@ Congratulations, we finish the basic social auth configuration. Let's start to b
 
 Everyone who has the facebook account is a facebook developer. If you don't have a facebook account, spend three minutes to apply one.
 
-Let's go to [facebook developer center](https://developers.facebook.com/)
+Let's go to [facebook developer center](https://developers.facebook.com/).
 
+Click "Add a New App" in "My Apps"
+![AddNewApp](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/CreateANewFacebookApp.png)
+
+We are developing a Web app so choose the "www" icon.
+
+![Choose WWW](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/ChooseFacebookAppTypes.png)
+
+Then name our app and click the button "Create New Facebook App ID"
+![NameFacebookAppID](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/NameFacebookAppID.png)
