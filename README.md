@@ -123,7 +123,7 @@ Click "Add a New App" in "My Apps"
 
 ![AddNewApp](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/CreateANewFacebookApp.png)
 
-We are developing a Web app so choose the "www" icon.
+We are developing a Web app so chick the "www" icon.
 
 ![Choose WWW](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/ChooseFacebookAppTypes.png)
 
@@ -137,3 +137,8 @@ A form pops out, finish the required blanks and click "Create App ID".
 
 After the App is created successfully, the page will redirect to a "Quick Start" tutorial.
 ![QuickStartPage](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/QuickStartPage.png)
+
+Scroll down the page, there are two blanks about the settings of the url.
+The first one is the url of our websites and the second one is for the mobile websites.
+
+![Urls](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Build%20Urls.png)
