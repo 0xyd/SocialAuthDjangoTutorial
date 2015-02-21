@@ -4,6 +4,7 @@ __pycache__/
 
 # Ignore personal settings
 social_auth/social_auth/my_settings.py
+Keynote
 
 # C extensions
 *.so
