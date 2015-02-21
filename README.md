@@ -145,11 +145,11 @@ The first one is the url of our websites and the second one is for the mobile we
 
 In the tutorial, we use the normal web app as the example. Hence, we input our web app's url in the above blank.
 
-##### B. Set up a test configuration on local machine.
+##### B. Set up a test Url configuration on our local machine.
 
-If we want to test the functions of the social auth on our local machine. There are something we have to concern.
+If we want to test the functions of the social auth on the local machine. There are something we have to do.
 
-First, the http://localhost and http://127.0.0.1 are not allowed. Hence, we have to define the domain name for our local machine local machine.
+Because the http://localhost and http://127.0.0.1 are not allowed. we have to define the domain name for our local machine local machine.
 
 My development environment is built on Mac OS X, so the following steps are specific for the developers using Mac. For developers on Windows, I have no idea. Hope there are some professional developers contributing the configuration of windows. (In my point of view, the steps for linux may quite alike, if you guys want to contribute the related information, please do :") ) 
 
