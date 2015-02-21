@@ -169,3 +169,20 @@ My development environment is built on Mac OS X, so the following steps are spec
 
 5. To check the domain name is successful or not, run the django project we set. If we can open the page with the new domain name. We success.![Name Success](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Set%20up%20the%20local%20machine's%20domain%20name%20successfully.png)
 
+##### C. Set up the url for the app.
+
+Enter the name in the site url blank.
+![Enter the url](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Set%20up%20the%20Url.png)
+
+Congratulations, we create our own facebook app successfully.
+
+### 4. Configuration of the Facebook app
+
+It's worth to read the "Quick Start" page which can give us a quick understanding of the basic facebook APIs. However, life is short. Click the "Skip Quick Start" button and go ahead.
+![Skip Quick Start](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Skip%20the%20Quick%20Start%20Page.png)
+
+Then the page will direct to the dashboard of the web app. On the dashboard, we can see two vital properties which have deep connection with the social auth. One is the App Id, the identity number of the app. The other is the App Secret(or App Key), the app's password. Careful, NEVER let other knows the App Secret. Hide it as well as you can.
+![Dashboard](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Dashboard.png)
+
+We are too excited to wait. So let's trigger our web app for development! Go to "Status & Review" page (Mark 1) and there is a toggle on the right side of the page (Mark 2). Click it for start.
+![Status & Review](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Status%20&%20Review.png)
