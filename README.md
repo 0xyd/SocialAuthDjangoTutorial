@@ -142,3 +142,30 @@ Scroll down the page, there are two blanks about the settings of the url.
 The first one is the url of our websites and the second one is for the mobile websites.
 
 ![Urls](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Build%20Urls.png)
+
+In the tutorial, we use the normal web app as the example. Hence, we input our web app's url in the above blank.
+
+##### B. Set up a test configuration on local machine.
+
+If we want to test the functions of the social auth on our local machine. There are something we have to concern.
+
+First, the http://localhost and http://127.0.0.1 are not allowed. Hence, we have to define the domain name for our local machine local machine.
+
+My development environment is built on Mac OS X, so the following steps are specific for the developers using Mac. For developers on Windows, I have no idea. Hope there are some professional developers contributing the configuration of windows. (In my point of view, the steps for linux may quite alike, if you guys want to contribute the related information, please do :") ) 
+
+###### Mac:
+1. Open the terminal.
+
+2. Open the /etc/hosts with vim
+    
+    $ sudo vim /etc/hosts
+    
+3. Change the localhost to the domain name we want and save the changes.
+![Name the local host](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Name%20the%20domain%20name%20for%20the%20local%20machine.png)
+
+4. Recache the modifed Domain Settings.
+    
+    $ decacheutil -flushcache
+
+5. To check the domain name is successful or not, run the django project we set. If we can open the page with the new domain name. We success.![Name Success](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Set%20up%20the%20local%20machine's%20domain%20name%20successfully.png)
+
