@@ -7,16 +7,18 @@
 	</style>
 </head>
 <body>
-	<div>
+	<div style="margin-top: 20vh;">
 		{% if user and not user.is_anonymous %}
-		<li>
-			{{ user.get_full_name|default:user.username }}
-		</li>
-		<li>
-			<a href="{% url 'auth:logout' %}?next=/">
-				Log out
-			</a>
-		</li>
+		<div style="text-align: center;">
+			<li>
+				{{ user.get_full_name|default:user.username }}
+			</li>
+			<li>
+				<a href="{% url 'auth:logout' %}?next=/social_networks">
+					Log out
+				</a>
+			</li>
+		</div>
 		{% else %}
 		<a href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}">
 			<img class='social-icns'

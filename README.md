@@ -186,3 +186,22 @@ Then the page will direct to the dashboard of the web app. On the dashboard, we 
 
 We are too excited to wait. So let's trigger our web app for development! Go to "Status & Review" page (Mark 1) and there is a toggle on the right side of the page (Mark 2). Click it for start.
 ![Status & Review](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Status%20&%20Review.png)
+
+### 5. Make a simple app with social authentication
+
+##### A. Add the facebook app id and secret into the setting.py.
+![Add the app_id and app_secret](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Put%20the%20app%20id%20and%20secret%20into%20the%20setting.png)
+
+##### B. Write the html as below
+
+![Write html](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/SocialLoginExample.png)
+
+When a client gets the web page, the server will check the client's session id. If the id is correct, then the server will read the session data to check the user's properties. Getting anonymous represents the client hasn't logged in. Therefore, the "Login with facebook" icon will display.
+
+![Display-fb-login](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/feature/social/Imgs/Facebook%20Login.png)
+
+If our facebook cookies are not expired, we will redirect to the app authentication message page in facebook.
+![Authentication Page](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/feature/social/Imgs/Facebook%20App%20Authentication%20Page.png)
+
+Suppose that the facebook cookies is expired, the facebook will redirect the clients to the facebook login page. Just finish the login process and the rest of the steps are really similar.
+
