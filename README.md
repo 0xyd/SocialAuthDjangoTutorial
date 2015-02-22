@@ -205,3 +205,5 @@ If our facebook cookies are not expired, we will redirect to the app authenticat
 
 Suppose that the facebook cookies is expired, the facebook will redirect the clients to the facebook login page. Just finish the login process and the rest of the steps are really similar.
 
+Click the okay. The page will redirect to the original page and we can see the client's user name is displayed on the page. We can see the name "Yu De Lin" displaying.
+![Yu-De Lin Displaying](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Name%20Display%20on%20Page.png)
