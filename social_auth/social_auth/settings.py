@@ -42,6 +42,9 @@ INSTALLED_APPS = (
     'social.apps.django_app.default',
     # For MongoEngine
     # 'social.apps.django_app.me',
+
+    # Create the app of the social_networks
+    'social_networks',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -83,6 +86,13 @@ AUTHENTICATION_BACKENDS = (
     # Default Django Auth Backends
     'django.contrib.auth.backends.ModelBackend',
 )
+
+# Social Authentication
+# For Facebook
+SOCIAL_AUTH_FACEBOOK_KEY = my_facebook_app_id
+SOCIAL_AUTH_FACEBOOK_SECRET = my_facebook_app_secret
+
+
 
 ROOT_URLCONF = 'social_auth.urls'
 
