@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title></title>
+	<style>
+		.social-icns { width: 200px; display: block; margin-right: auto; margin-left: auto;}
+	</style>
+</head>
+<body>
+	<div>
+		{% if user and not user.is_anonymous %}
+		<li>
+			{{ user.get_full_name|default:user.username }}
+		</li>
+		<li>
+			<a href="{% url 'auth:logout' %}?next=/">
+				Log out
+			</a>
+		</li>
+		{% else %}
+		<a href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}">
+			<img class='social-icns'
+				 src='/static/login-with-fb.png'>
+			</img>
+		</a>
+		{% endif %}
+	</div>
+</body>
+</html>

@@ -10,4 +10,7 @@ urlpatterns = patterns('',
 
     # Url Entries for django administration
     url('', include('django.contrib.auth.urls', namespace='auth')),
+
+    # Url for the social networks
+    url(r'^social_networks/', include('social_networks.urls', namespace='social_networks'))
 )
