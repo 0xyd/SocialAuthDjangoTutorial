@@ -11,9 +11,9 @@ the next step is to learn how to get users' profile image from social networks a
 
 ## Outlines:
 
-* First Chapter: <br> Install the Python Social Auth and Finish the Configurations.
-* Second Chapter: <br> A Facebook App
-* Third Chapter: <br> A Twiiter App
+* First Chapter: Install the Python Social Auth and Finish the Configurations.
+* Second Chapter: A Facebook App
+* Third Chapter: A Twiiter App
 
 
 ## First Chapter: Install the Python Social Auth and Finish the Configurations.
