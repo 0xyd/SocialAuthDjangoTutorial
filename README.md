@@ -207,3 +207,12 @@ Suppose that the facebook cookies is expired, the facebook will redirect the cli
 
 Click the okay. The page will redirect to the original page and we can see the client's user name is displayed on the page. We can see the name "Yu De Lin" displaying.
 ![Yu-De Lin Displaying](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Name%20Display%20on%20Page.png)
+
+Let's go to check the "auth_user" table inside the database. We can see the client's related information here.
+![auth_user check1](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Check%20auth%20user%20table%201.png)
+
+Also, there is another data storing in "usersocialauth" table.
+![social_auth](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/fbbb5b1c5088ee2538c436e32706e5895eb9307a/Imgs/usersocialauth.png)
+
+The "provider" column saves the client's social data provider such as facebook. "uid" is the abbreviation of "user id" meaning the user's identity number in the social provider. The most important part is the "extra_data" where stores the "access token". The higher priority the "access token" with, the more data and social mechanism we can access and use.
+<br></br>
