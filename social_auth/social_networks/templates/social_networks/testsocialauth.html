@@ -3,7 +3,7 @@
 <head>
 	<title></title>
 	<style>
-		.social-icns { width: 200px; display: block; margin-right: auto; margin-left: auto;}
+		.social-icns { width: 200px; display: block; margin-right: auto; margin-left: auto; margin-bottom: 2em;}
 	</style>
 </head>
 <body>
@@ -23,6 +23,11 @@
 		<a href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}">
 			<img class='social-icns'
 				 src='/static/login-with-fb.png'>
+			</img>
+		</a>
+		<a href="{% url 'social:begin' 'twitter' %}?next={{ request.path }}">
+			<img class='social-icns'
+				 src='/static/login-with-twitter.png'>
 			</img>
 		</a>
 		{% endif %}

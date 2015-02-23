@@ -9,7 +9,14 @@ In this tutorial, we will teach you how to sign up/in with facebook, twitter and
 After we finish the basic sign in mechanisms in those three platforms, 
 the next step is to learn how to get users' profile image from social networks as their profile image in our web services. 
 
-## First Step: Install the Python Social Auth
+## Outlines:
+
+* First Chapter: <br> Install the Python Social Auth and Finish the Configurations.
+* Second Chapter: <br> A Facebook App
+* Third Chapter: <br> A Twiiter App
+
+
+## First Chapter: Install the Python Social Auth and Finish the Configurations.
 
 ### 1. Install From pypi:
     
@@ -111,7 +118,9 @@ Two template context processors should be added.
 
 Congratulations, we finish the basic social auth configuration. Let's start to build our first facebook login app.
 
-### 3. Create a Facebook app.
+## Second Chapter: A Facebook App.
+
+### 1. Create a Facebook app in Facebook Developer Center.
 
 ##### A. Enroll an facebook app on Facebook Developer Center
 
@@ -176,7 +185,7 @@ Enter the name in the site url blank.
 
 Congratulations, we create our own facebook app successfully.
 
-### 4. Configuration of the Facebook app
+### 2. Configuration of the Facebook app
 
 It's worth to read the "Quick Start" page which can give us a quick understanding of the basic facebook APIs. However, life is short. Click the "Skip Quick Start" button and go ahead.
 ![Skip Quick Start](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Skip%20the%20Quick%20Start%20Page.png)
@@ -187,7 +196,7 @@ Then the page will direct to the dashboard of the web app. On the dashboard, we 
 We are too excited to wait. So let's trigger our web app for development! Go to "Status & Review" page (Mark 1) and there is a toggle on the right side of the page (Mark 2). Click it for start.
 ![Status & Review](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Status%20&%20Review.png)
 
-### 5. Make a simple app with social authentication
+### 3. Initialize an app with facebook social authentication
 
 ##### A. Add the facebook app id and secret into the setting.py.
 ![Add the app_id and app_secret](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Put%20the%20app%20id%20and%20secret%20into%20the%20setting.png)
@@ -216,3 +225,28 @@ Also, there is another data storing in "usersocialauth" table.
 
 The "provider" column saves the client's social data provider such as facebook. "uid" is the abbreviation of "user id" meaning the user's identity number in the social provider. The most important part is the "extra_data" where stores the "access token". The higher priority the "access token" with, the more data and social mechanism we can access and use.
 <br></br>
+
+## Third Chapter: A Twiiter app
+### 1. Create a twitter app on twitter
+Go to twitter [application management page](https://apps.twitter.com).
+
+Then sign in with our twitter account, the page will direct to a simple dashboard page. Click the "Create New App" on the right side. 
+<br>
+![Create a twitter app](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Create%20Twitter%20App%20.png)
+
+We will get an application form page for applying app. Fill the following blanks which are marked required and agree the "Developer Agreement". Important, an app with twitter authentication follows Oauth 1.0a rule, so we have to add a call back url like "http://domain.name/complete/twitter".
+![Fill the blanks](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/The%20Twitter%20Application%20Form.png)
+![Agree the Treatment](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Agree%20the%20Twitter%20Developers%20License.png)
+
+Like applying a facebook app, twitter will lead us to our dashboard page of the app. To start an app with twitter authentication as we did a facebook auth app, the key and secret are the must. Go to page about "Keys and Access Token".
+![Twitter Dashboard](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Twitter%20App%20Dashboard.png)
+
+On the "Keys and Access Token" page, we can find out our App id and App secret here. Please copy these two into our setting files. (Do not leak the "secret" one.) Don't forget to click the "Create my acess token" at the bottom of the page.
+![Keys and Access](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Twitter%20Page%20for%20id%20and%20secret.png)
+![Click button](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Create%20twitter%20access%20token.png)
+
+### 2. Add a "Connect with Twitter" function on the page
+
+It's really simple. Just add the lines of code as below:
+![Add twitter icon](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Add%20twitter%20on%20the%20page.png)
+![Two social icons](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Two%20social%20Icons.png)

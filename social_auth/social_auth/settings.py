@@ -89,10 +89,12 @@ AUTHENTICATION_BACKENDS = (
 
 # Social Authentication
 # For Facebook
-SOCIAL_AUTH_FACEBOOK_KEY = my_facebook_app_id
+SOCIAL_AUTH_FACEBOOK_KEY = my_facebook_app_key
 SOCIAL_AUTH_FACEBOOK_SECRET = my_facebook_app_secret
 
-
+# For Twitter
+SOCIAL_AUTH_TWITTER_KEY = my_twitter_app_key
+SOCIAL_AUTH_TWITTER_SECRET = my_twitter_app_secret
 
 ROOT_URLCONF = 'social_auth.urls'
 
