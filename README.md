@@ -250,3 +250,6 @@ On the "Keys and Access Token" page, we can find out our App id and App secret h
 It's really simple. Just add the lines of code as below:
 ![Add twitter icon](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Add%20twitter%20on%20the%20page.png)
 ![Two social icons](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Two%20social%20Icons.png)
+
+If a twitter validation page shows up, it means the twitter soical auth app is established successfully.
+![Twitter validation page](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Twiiter%20Validation%20Page.png)
