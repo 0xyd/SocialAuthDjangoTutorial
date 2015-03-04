@@ -30,6 +30,11 @@
 				 src='/static/login-with-twitter.png'>
 			</img>
 		</a>
+		<a href="{% url 'social:begin' 'google' %}?next={{ request.path }}">
+			<img class='social-icns'
+				 src='/static/login-with-google.png'>
+			</img>
+		</a>
 		{% endif %}
 	</div>
 </body>

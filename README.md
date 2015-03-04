@@ -18,8 +18,8 @@ the next step is to learn how to get users' profile image from social networks a
   * A Goolgle App
 * Chapter 3: Pipleline: Set up our own authentication process.
   * What is the Pipleline? 
-  * Example 1: Get the User's Profile Picture 
-  * Example 2: Handle an Exception: Facebook user login without Email Address.
+  * Application 1: Get the User's Profile Picture 
+  * Application 2: Handle an Exception: Facebook user login without Email Address.
 
 (Still Continuing....)
 
@@ -260,3 +260,9 @@ It's really simple. Just add the lines of code as below:
 
 If a twitter validation page shows up, it means the twitter soical auth app is established successfully.
 ![Twitter validation page](https://raw.githubusercontent.com/davisfreeman1015/SocialAuthDjangoTutorial/master/Imgs/Twiiter%20Validation%20Page.png)
+
+### 3. A Google App
+
+#### A. Enroll a google app 
+
+Just like we apply a facebook or a twiiter app. We have to create an app on the [Google Developer Console](https://console.developers.google.com).
