@@ -18,8 +18,8 @@ the next step is to learn how to get users' profile image from social networks a
   * A Goolgle App
 * Chapter 3: Pipleline: Set up our own authentication process.
   * What is the Pipleline? 
-  * Get the User's Profile Picture 
-  * Handle an Exception: Facebook user login without Email Address.
+  * Example 1: Get the User's Profile Picture 
+  * Example 2: Handle an Exception: Facebook user login without Email Address.
 
 (Still Continuing....)
 

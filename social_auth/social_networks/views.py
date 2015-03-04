@@ -9,7 +9,6 @@ class SocialTestView(TemplateView):
 
 	def get(self, request):
 
-		print(request)
 		context = RequestContext(
 			request, {
 				'request': request,
