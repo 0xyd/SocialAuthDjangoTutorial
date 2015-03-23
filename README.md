@@ -266,3 +266,14 @@ If a twitter validation page shows up, it means the twitter soical auth app is e
 #### A. Enroll a google app 
 
 Just like we apply a facebook or a twiiter app. We have to create an app on the [Google Developer Console](https://console.developers.google.com).
+
+![Google App Projects Application Page](https://raw.githubusercontent.com/yudazilian/SocialAuthDjangoTutorial/master/Imgs/CreateAGoogleApp.png)
+
+Then fill the form with a beautiful project name and the project id is a self-created object which I have no idea how to use it on the applications now.
+
+![Create Project Form](https://raw.githubusercontent.com/yudazilian/SocialAuthDjangoTutorial/master/Imgs/Google%20Form.png)
+
+After completing the form, we can see a block showing the building progress of our project on the right side. The browser also directs us to the projects' dashboard page when the progress is complted.
+![Project Dashboard](https://raw.githubusercontent.com/yudazilian/SocialAuthDjangoTutorial/master/Imgs/Creating%20Progress.png)
+
+
