@@ -273,7 +273,7 @@ Then fill the form with a beautiful project name and the project id is a self-cr
 
 ![Create Project Form](https://raw.githubusercontent.com/yudazilian/SocialAuthDjangoTutorial/master/Imgs/Google%20Form.png)
 
-After completing the form, we can see a block showing the building progress of our project on the right side. The browser also directs us to the projects' dashboard page when the progress is complted.
+After completing the form, we can see a block showing the building progress of our project on the right side. The browser also directs us to the project's dashboard page when the progress is completed.
 ![Project Dashboard](https://raw.githubusercontent.com/yudazilian/SocialAuthDjangoTutorial/master/Imgs/Creating%20Progress.png)
 
 
